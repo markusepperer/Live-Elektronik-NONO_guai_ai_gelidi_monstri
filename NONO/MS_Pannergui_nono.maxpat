@@ -15,6 +15,18 @@
             {
                 "box": {
                     "comment": "",
+                    "id": "obj-19",
+                    "index": 0,
+                    "maxclass": "inlet",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ -151.0, -88.62275338172913, 30.0, 30.0 ]
+                }
+            },
+            {
+                "box": {
+                    "comment": "",
                     "id": "obj-18",
                     "index": 0,
                     "maxclass": "inlet",
@@ -4445,6 +4457,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-707", 0 ],
+                    "source": [ "obj-19", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-35", 0 ],
                     "source": [ "obj-20", 0 ]
                 }
@@ -4805,6 +4823,14 @@
             "obj-84": [ "VerticalPingPongOffsetCycle[17]", "VerticalPingPongOffsetCycle[1]", 0 ],
             "obj-85": [ "VerticalPingPongOffsetCycle[18]", "VerticalPingPongOffsetCycle[1]", 0 ],
             "obj-90": [ "PhasorHorizOffsetCycle[1]", "PhasorHorizOffsetCycle", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0
