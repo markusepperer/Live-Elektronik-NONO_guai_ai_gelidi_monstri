@@ -9,9 +9,20 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 179.0, 162.0, 1415.0, 836.0 ],
+        "rect": [ 184.0, 287.0, 1415.0, 836.0 ],
         "subpatcher_template": "Default Max 7",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-23",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 220.0, -31.0, 93.0, 22.0 ],
+                    "text": "loadmess 0.575"
+                }
+            },
             {
                 "box": {
                     "comment": "",
@@ -4086,7 +4097,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 229.16667759418488, 48.61111342906952, 44.60784590244293, 21.0 ],
+                    "patching_rect": [ 220.0, 45.218386590480804, 44.60784590244293, 21.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_initial": [ 0.575 ],
@@ -4482,6 +4493,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-728", 0 ],
+                    "source": [ "obj-23", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-20", 0 ],
                     "order": 4,
                     "source": [ "obj-25", 0 ]
@@ -4823,14 +4840,6 @@
             "obj-84": [ "VerticalPingPongOffsetCycle[17]", "VerticalPingPongOffsetCycle[1]", 0 ],
             "obj-85": [ "VerticalPingPongOffsetCycle[18]", "VerticalPingPongOffsetCycle[1]", 0 ],
             "obj-90": [ "PhasorHorizOffsetCycle[1]", "PhasorHorizOffsetCycle", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
