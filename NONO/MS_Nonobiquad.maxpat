@@ -97,7 +97,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "" ],
+                    "outlettype": [ "signal" ],
                     "patching_rect": [ 24.0, 91.0, 30.0, 30.0 ]
                 }
             },
@@ -114,7 +114,7 @@
                     "outlettype": [ "list", "float", "float", "float", "float", "list", "int" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 296.25, 305.0, 360.0, 155.0 ],
-                    "setfilter": [ 0, 3, 1, 0, 0, 77.78199768066406, 1.0, 8.649999618530273, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+                    "setfilter": [ 0, 3, 1, 0, 0, 369.9939880371094, 1.0, 8.649999618530273, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
                 }
             },
             {
