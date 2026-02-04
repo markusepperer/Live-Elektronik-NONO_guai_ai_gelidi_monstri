@@ -4,14 +4,26 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 0,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ -1694.0, 45.0, 1660.0, 980.0 ],
+        "rect": [ 176.0, 148.0, 1660.0, 913.0 ],
         "subpatcher_template": "Default Max 7",
         "boxes": [
+            {
+                "box": {
+                    "color": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "id": "obj-41",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 413.6363596916199, 251.59090089797974, 159.0, 22.0 ],
+                    "text": "receive direktwahlprogramm"
+                }
+            },
             {
                 "box": {
                     "id": "obj-246",
@@ -150,7 +162,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -158,6 +170,17 @@
                         "rect": [ 134.0, 159.0, 753.0, 531.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-4",
+                                    "maxclass": "number",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 115.0, 221.0, 50.0, 22.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "comment": "",
@@ -289,6 +312,14 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-215", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-210", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-4", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-210", 0 ]
                                 }
                             },
@@ -304,13 +335,7 @@
                                     "source": [ "obj-3", 0 ]
                                 }
                             }
-                        ],
-                        "bgfillcolor_type": "gradient",
-                        "bgfillcolor_color1": [ 0.376471, 0.384314, 0.4, 1.0 ],
-                        "bgfillcolor_color2": [ 0.290196, 0.309804, 0.301961, 1.0 ],
-                        "bgfillcolor_color": [ 0.290196, 0.309804, 0.301961, 1.0 ],
-                        "bgfillcolor_angle": 270.0,
-                        "bgfillcolor_proportion": 0.39
+                        ]
                     },
                     "patching_rect": [ 1115.9090802669525, 300.118340075016, 68.0, 22.0 ],
                     "text": "p INC DEC"
@@ -329,7 +354,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -344,7 +369,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 197.29728412628174, 297.2972774505615, 50.0, 22.0 ]
+                                    "patching_rect": [ 197.29728412628174, 297.2972774505615, 50.0, 22.0 ],
+                                    "text": "0"
                                 }
                             },
                             {
@@ -354,7 +380,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 251.35133457183838, 297.2972774505615, 50.0, 22.0 ]
+                                    "patching_rect": [ 251.35133457183838, 297.2972774505615, 50.0, 22.0 ],
+                                    "text": "10"
                                 }
                             },
                             {
@@ -364,7 +391,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 141.21620678901672, 297.2972774505615, 50.0, 22.0 ]
+                                    "patching_rect": [ 141.21620678901672, 297.2972774505615, 50.0, 22.0 ],
+                                    "text": "68"
                                 }
                             },
                             {
@@ -396,7 +424,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 131.7567479610443, 256.75673961639404, 50.0, 22.0 ],
-                                    "text": "13"
+                                    "text": "1"
                                 }
                             },
                             {
@@ -420,7 +448,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 528.0000157356262, 376.0000056028366, 448.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "The rightmost outlet of the midiparse object converts MIDI input into properly formatted midievent messages for use with the vst~ object."
                                 }
@@ -448,7 +475,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 966.6666954755783, 329.3333375453949, 57.5, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "MIDI \nChannel"
                                 }
@@ -463,7 +489,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 872.0000259876251, 329.3333375453949, 41.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Pitch\nBend"
                                 }
@@ -491,7 +516,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 684.0000203847885, 329.3333375453949, 60.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Pgm \nChange"
                                 }
@@ -506,7 +530,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 590.6666842699051, 329.3333375453949, 61.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Control \nChange"
                                 }
@@ -521,7 +544,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 496.0000147819519, 329.3333375453949, 62.166672, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Poly \nPressure"
                                 }
@@ -536,7 +558,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 400.00001192092896, 329.3333375453949, 53.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Note \nOn/Off"
                                 }
@@ -845,7 +866,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -1027,7 +1048,7 @@
                                 "box": {
                                     "allowdrag": 0,
                                     "id": "obj-74",
-                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "SoftStep Control Surface", ",", "SoftStep TRS MIDI Out", ",", "SoftStep CV Out", ",", "DOREMiDi MPC-20-C241", ",", "from Max 1", ",", "from Max 2", ",", "MPD218 Port A", ",", "SoftStep Share" ],
+                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "from Max 1", ",", "from Max 2" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -1239,13 +1260,7 @@
                                     "source": [ "obj-9", 0 ]
                                 }
                             }
-                        ],
-                        "bgfillcolor_type": "gradient",
-                        "bgfillcolor_color1": [ 0.376471, 0.384314, 0.4, 1.0 ],
-                        "bgfillcolor_color2": [ 0.290196, 0.309804, 0.301961, 1.0 ],
-                        "bgfillcolor_color": [ 0.290196, 0.309804, 0.301961, 1.0 ],
-                        "bgfillcolor_angle": 270.0,
-                        "bgfillcolor_proportion": 0.39
+                        ]
                     },
                     "patching_rect": [ 734.887344121933, 247.09090089797974, 99.0, 31.0 ],
                     "text": "p Softstep"
@@ -1393,7 +1408,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1802,7 +1817,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -2635,7 +2650,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -2739,14 +2754,25 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ -1470.0, 200.0, 1346.0, 904.0 ],
+                        "rect": [ 134.0, 96.0, 1346.0, 904.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
+                            {
+                                "box": {
+                                    "color": [ 1.0, 1.0, 1.0, 1.0 ],
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 327.0, 802.0, 147.0, 22.0 ],
+                                    "text": "send direktwahlprogramm"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-2",
@@ -2842,7 +2868,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 575.5, 350.0, 50.0, 22.0 ],
-                                    "text": "51"
+                                    "text": "1"
                                 }
                             },
                             {
@@ -3276,7 +3302,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -4389,7 +4415,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -4571,7 +4597,7 @@
                                 "box": {
                                     "allowdrag": 0,
                                     "id": "obj-74",
-                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "SoftStep Control Surface", ",", "SoftStep TRS MIDI Out", ",", "SoftStep CV Out", ",", "DOREMiDi MPC-20-C241", ",", "from Max 1", ",", "from Max 2", ",", "MPD218 Port A" ],
+                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "from Max 1", ",", "from Max 2" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -4898,6 +4924,78 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-40", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-41", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-42", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-43", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-44", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-45", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-46", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-47", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-48", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-49", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-50", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-51", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-56", 0 ],
                                     "source": [ "obj-52", 0 ]
                                 }
@@ -5160,7 +5258,7 @@
                     "patching_rect": [ 2079.9999256134033, 209.09090161323547, 85.0, 32.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 968.8172470331192, 1157.3077291846275, 85.0, 32.0 ],
-                    "text": "filter 2",
+                    "text": "filter 1",
                     "textjustification": 1
                 }
             },
@@ -5182,7 +5280,7 @@
                     "presentation_rect": [ 933.3333745002747, 1121.823856651783, 18.0, 66.0 ],
                     "shape": 1,
                     "size": 4,
-                    "value": 1
+                    "value": 0
                 }
             },
             {
@@ -5391,7 +5489,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -7005,7 +7103,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -7226,7 +7324,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -7446,7 +7544,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -7634,7 +7732,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -7758,7 +7856,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -7875,7 +7973,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -8181,7 +8279,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -8305,7 +8403,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -8422,7 +8520,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -8881,12 +8979,12 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ -1417.0, 227.0, 1174.0, 629.0 ],
+                        "rect": [ 428.0, 103.0, 1174.0, 629.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
                             {
@@ -8921,7 +9019,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 481.0, 426.0, 85.0, 32.0 ],
-                                    "text": "filter 2",
+                                    "text": "filter 1",
                                     "textjustification": 1
                                 }
                             },
@@ -9015,7 +9113,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -9225,12 +9323,12 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 34.0, 172.0, 1660.0, 816.0 ],
+                                        "rect": [ 226.0, 148.0, 1660.0, 816.0 ],
                                         "subpatcher_template": "Default Max 7",
                                         "boxes": [
                                             {
@@ -9274,8 +9372,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 70.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 69.295 77.782"
+                                                    "patching_rect": [ 160.0, 70.0, 520.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 77.782 87.307"
                                                 }
                                             },
                                             {
@@ -9296,8 +9394,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 70.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 82.407 92.449"
+                                                    "patching_rect": [ 810.0, 70.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 1244.498 1396.902"
                                                 }
                                             },
                                             {
@@ -9318,8 +9416,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 180.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 97.999 110."
+                                                    "patching_rect": [ 160.0, 180.0, 526.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 109.999 123.47"
                                                 }
                                             },
                                             {
@@ -9340,8 +9438,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 180.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 116.541 130.813"
+                                                    "patching_rect": [ 810.0, 180.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 1759.948 1975.475"
                                                 }
                                             },
                                             {
@@ -9362,8 +9460,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 290.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 138.591 155.563"
+                                                    "patching_rect": [ 160.0, 290.0, 520.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 155.56 174.61"
                                                 }
                                             },
                                             {
@@ -9384,8 +9482,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 290.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 164.814 184.997"
+                                                    "patching_rect": [ 810.0, 290.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 2488.997 2793.804"
                                                 }
                                             },
                                             {
@@ -9406,8 +9504,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 400.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 195.998 220."
+                                                    "patching_rect": [ 160.0, 400.0, 526.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 219.998 246.94"
                                                 }
                                             },
                                             {
@@ -9428,8 +9526,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 400.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 233.082 261.626"
+                                                    "patching_rect": [ 810.0, 400.0, 540.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 3519.99 3951.056"
                                                 }
                                             },
                                             {
@@ -9450,8 +9548,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 510.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 277.183 311.127"
+                                                    "patching_rect": [ 160.0, 510.0, 519.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 311.12 349.22"
                                                 }
                                             },
                                             {
@@ -9472,8 +9570,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 510.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 329.628 369.994"
+                                                    "patching_rect": [ 810.0, 510.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 4977.993 5587.608"
                                                 }
                                             },
                                             {
@@ -9494,8 +9592,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 620.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 391.995 440."
+                                                    "patching_rect": [ 160.0, 620.0, 533.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 439.996 493.879"
                                                 }
                                             },
                                             {
@@ -9516,8 +9614,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 620.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 466.164 523.251"
+                                                    "patching_rect": [ 810.0, 620.0, 544.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 7039.981 7902.111"
                                                 }
                                             },
                                             {
@@ -9538,8 +9636,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 730.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 554.365 622.254"
+                                                    "patching_rect": [ 160.0, 730.0, 533.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 622.249 698.451"
                                                 }
                                             },
                                             {
@@ -9560,8 +9658,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 730.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 659.255 739.989"
+                                                    "patching_rect": [ 810.0, 730.0, 551.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 9955.986 11175.217"
                                                 }
                                             },
                                             {
@@ -9582,8 +9680,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 840.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 783.991 880."
+                                                    "patching_rect": [ 160.0, 840.0, 533.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 879.993 987.759"
                                                 }
                                             },
                                             {
@@ -9604,8 +9702,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 840.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 932.328 1046.503"
+                                                    "patching_rect": [ 810.0, 840.0, 559.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 14079.773 15804.011"
                                                 }
                                             },
                                             {
@@ -10494,12 +10592,12 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 134.0, 172.0, 1461.0, 783.0 ],
+                                        "rect": [ 196.0, 171.0, 1461.0, 783.0 ],
                                         "subpatcher_template": "Default Max 7",
                                         "boxes": [
                                             {
@@ -10543,8 +10641,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 70.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 65.407 73.417"
+                                                    "patching_rect": [ 160.0, 70.0, 520.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 69.295 77.782"
                                                 }
                                             },
                                             {
@@ -10565,8 +10663,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 70.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 77.782 87.307"
+                                                    "patching_rect": [ 810.0, 70.0, 545.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 1108.675 1244.445"
                                                 }
                                             },
                                             {
@@ -10587,8 +10685,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 180.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 92.449 103.826"
+                                                    "patching_rect": [ 160.0, 180.0, 526.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 97.993 109.993"
                                                 }
                                             },
                                             {
@@ -10609,8 +10707,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 180.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 110. 123.471"
+                                                    "patching_rect": [ 810.0, 180.0, 540.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 1567.964 1759.98"
                                                 }
                                             },
                                             {
@@ -10631,8 +10729,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 290.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 130.813 146.832"
+                                                    "patching_rect": [ 160.0, 290.0, 533.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 138.589 155.561"
                                                 }
                                             },
                                             {
@@ -10653,8 +10751,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 290.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 155.563 174.614"
+                                                    "patching_rect": [ 810.0, 290.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 2217.444 2488.997"
                                                 }
                                             },
                                             {
@@ -10675,8 +10773,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 400.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 184.997 207.652"
+                                                    "patching_rect": [ 160.0, 400.0, 533.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 195.996 219.998"
                                                 }
                                             },
                                             {
@@ -10697,8 +10795,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 400.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 220. 246.942"
+                                                    "patching_rect": [ 810.0, 400.0, 540.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 3135.928 3519.96"
                                                 }
                                             },
                                             {
@@ -10719,8 +10817,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 510.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 261.626 293.665"
+                                                    "patching_rect": [ 160.0, 510.0, 532.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 277.178 311.122"
                                                 }
                                             },
                                             {
@@ -10741,8 +10839,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 510.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 311.127 349.228"
+                                                    "patching_rect": [ 810.0, 510.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 4434.888 4977.993"
                                                 }
                                             },
                                             {
@@ -10763,8 +10861,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 620.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 369.994 415.305"
+                                                    "patching_rect": [ 160.0, 620.0, 533.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 391.991 439.995"
                                                 }
                                             },
                                             {
@@ -10785,8 +10883,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 620.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 440. 493.883"
+                                                    "patching_rect": [ 810.0, 620.0, 540.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 6271.856 7039.92"
                                                 }
                                             },
                                             {
@@ -10807,8 +10905,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 730.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 523.251 587.33"
+                                                    "patching_rect": [ 160.0, 730.0, 533.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 554.366 622.254"
                                                 }
                                             },
                                             {
@@ -10829,8 +10927,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 730.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 622.254 698.456"
+                                                    "patching_rect": [ 810.0, 730.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 8869.776 9955.987"
                                                 }
                                             },
                                             {
@@ -10851,8 +10949,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 160.0, 840.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 739.989 830.609"
+                                                    "patching_rect": [ 160.0, 840.0, 526.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 783.982 879.99"
                                                 }
                                             },
                                             {
@@ -10874,7 +10972,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
                                                     "patching_rect": [ 810.0, 840.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 880. 987.767"
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 12543.146 14079.205"
                                                 }
                                             },
                                             {
@@ -11763,12 +11861,12 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 134.0, 172.0, 1037.0, 672.0 ],
+                                        "rect": [ 382.0, 152.0, 1165.0, 714.0 ],
                                         "subpatcher_template": "Default Max 7",
                                         "boxes": [
                                             {
@@ -11834,8 +11932,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 70.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 73.416 82.407"
+                                                    "patching_rect": [ 810.0, 70.0, 539.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 987.764 1108.728"
                                                 }
                                             },
                                             {
@@ -11878,8 +11976,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 180.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 103.826 116.541"
+                                                    "patching_rect": [ 810.0, 180.0, 540.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 1396.84 1567.899"
                                                 }
                                             },
                                             {
@@ -11922,8 +12020,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 290.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 146.832 164.814"
+                                                    "patching_rect": [ 810.0, 290.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 1975.529 2217.456"
                                                 }
                                             },
                                             {
@@ -11966,8 +12064,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 400.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 207.652 233.082"
+                                                    "patching_rect": [ 810.0, 400.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 2793.774 3135.905"
                                                 }
                                             },
                                             {
@@ -12010,8 +12108,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 510.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 293.665 329.628"
+                                                    "patching_rect": [ 810.0, 510.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 3951.058 4434.913"
                                                 }
                                             },
                                             {
@@ -12054,8 +12152,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 620.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 415.305 466.164"
+                                                    "patching_rect": [ 810.0, 620.0, 546.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 5587.642 6271.916"
                                                 }
                                             },
                                             {
@@ -12098,8 +12196,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 730.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 587.33 659.255"
+                                                    "patching_rect": [ 810.0, 730.0, 545.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 7902.116 8869.825"
                                                 }
                                             },
                                             {
@@ -12142,8 +12240,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "dictionary" ],
-                                                    "patching_rect": [ 810.0, 840.0, 560.0, 22.0 ],
-                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 830.609 932.328"
+                                                    "patching_rect": [ 810.0, 840.0, 558.0, 22.0 ],
+                                                    "text": "filterdesign @topology butterworth @order 14 @response bandpass @frequency 11174.528 12542.984"
                                                 }
                                             },
                                             {
@@ -13032,7 +13130,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -13249,7 +13347,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 0,
+                                                            "revision": 2,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -13508,7 +13606,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 0,
+                                                            "revision": 2,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -13767,7 +13865,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 0,
+                                                            "revision": 2,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -14037,7 +14135,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 0,
+                                                            "revision": 2,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -14481,7 +14579,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -14934,7 +15032,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -15421,7 +15519,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 0,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -16100,7 +16198,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -17410,7 +17508,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -19037,12 +19135,12 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 134.0, 159.0, 753.0, 531.0 ],
+                        "rect": [ 134.0, 159.0, 1102.0, 593.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
                             {
@@ -19312,7 +19410,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -21446,6 +21544,12 @@
                 "patchline": {
                     "destination": [ "obj-105", 0 ],
                     "source": [ "obj-37", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-17", 0 ],
+                    "source": [ "obj-41", 0 ]
                 }
             },
             {
