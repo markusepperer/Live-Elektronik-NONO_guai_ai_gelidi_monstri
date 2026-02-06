@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 257.0, 127.0, 1932.0, 913.0 ],
+        "rect": [ 42.0, 227.0, 1660.0, 913.0 ],
         "subpatcher_template": "Default Max 7",
         "boxes": [
             {
@@ -139,7 +139,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1522.5225216150284, 136.03603595495224, 23.423423409461975, 20.0 ],
-                    "presentation_linecount": 2,
                     "text": "24"
                 }
             },
@@ -150,7 +149,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1231.5315307974815, 136.03603595495224, 26.09833714365959, 20.0 ],
-                    "presentation_linecount": 2,
                     "text": "17"
                 }
             },
@@ -161,7 +159,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1522.5225216150284, 101.8018017411232, 23.423423409461975, 20.0 ],
-                    "presentation_linecount": 2,
                     "text": "16"
                 }
             },
@@ -205,7 +202,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 2216.278990507126, 1531.2106545567513, 215.90908885002136, 114.0 ],
-                    "presentation_linecount": 3,
                     "text": "MATRIX\nBYPASS"
                 }
             },
@@ -219,7 +215,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 358.1395220756531, 1585.435089290142, 190.69766759872437, 114.0 ],
-                    "presentation_linecount": 2,
                     "text": "MATRIX\nOUT"
                 }
             },
@@ -8625,7 +8620,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 134.0, 255.0, 1104.0, 558.0 ],
+                        "rect": [ 240.0, 198.0, 1104.0, 558.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
                             {
@@ -8728,7 +8723,7 @@
                                     "numoutlets": 1,
                                     "offset": [ 0.0, 0.0 ],
                                     "outlettype": [ "list" ],
-                                    "patching_rect": [ 450.0, 351.0, 98.22225230932236, 94.89420592784882 ],
+                                    "patching_rect": [ 462.96294778585434, 294.81480515003204, 176.29629051685333, 177.77777194976807 ],
                                     "viewvisibility": 1
                                 }
                             },
@@ -8844,7 +8839,7 @@
                                             }
                                         ]
                                     },
-                                    "patching_rect": [ 450.0, 462.0, 39.0, 22.0 ],
+                                    "patching_rect": [ 450.0, 495.5555393099785, 39.0, 22.0 ],
                                     "text": "p sqrt"
                                 }
                             },
@@ -8981,7 +8976,7 @@
                                     "numoutlets": 3,
                                     "offset": [ 0.0, 0.0 ],
                                     "outlettype": [ "", "", "" ],
-                                    "patching_rect": [ 429.0, 122.0, 291.0, 166.0 ],
+                                    "patching_rect": [ 429.0, 122.0, 349.0, 166.0 ],
                                     "viewvisibility": 1
                                 }
                             },
@@ -9172,7 +9167,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 222.0, 121.0, 1189.0, 916.0 ],
+                        "rect": [ 170.0, 121.0, 1189.0, 916.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
                             {
@@ -9275,7 +9270,7 @@
                                     "numoutlets": 1,
                                     "offset": [ 0.0, 0.0 ],
                                     "outlettype": [ "list" ],
-                                    "patching_rect": [ 403.0, 394.0, 98.22225230932236, 94.89420592784882 ],
+                                    "patching_rect": [ 397.6000059247017, 388.00000578165054, 180.00000268220901, 176.8000026345253 ],
                                     "viewvisibility": 1
                                 }
                             },
@@ -9391,7 +9386,7 @@
                                             }
                                         ]
                                     },
-                                    "patching_rect": [ 403.0, 497.0, 39.0, 22.0 ],
+                                    "patching_rect": [ 397.87499567866325, 583.3333611488342, 39.0, 22.0 ],
                                     "text": "p sqrt"
                                 }
                             },
@@ -9503,7 +9498,7 @@
                                         "bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
                                         "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ]
                                     },
-                                    "patching_rect": [ 403.0, 528.0, 124.0, 22.0 ],
+                                    "patching_rect": [ 397.87499567866325, 624.3055853247643, 124.0, 22.0 ],
                                     "saved_object_attributes": {
                                         "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
                                         "locked_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
@@ -9528,7 +9523,7 @@
                                     "numoutlets": 3,
                                     "offset": [ 0.0, 0.0 ],
                                     "outlettype": [ "", "", "" ],
-                                    "patching_rect": [ 319.0, 167.0, 291.0, 166.0 ],
+                                    "patching_rect": [ 324.0, 171.75141048431396, 329.0, 159.0 ],
                                     "viewvisibility": 1
                                 }
                             },
@@ -9540,7 +9535,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 403.0, 733.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 397.9166856408119, 824.3055948615074, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -9553,7 +9548,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "multichannelsignal", "", "float", "list" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 403.0, 573.0, 124.0, 136.0 ],
+                                    "patching_rect": [ 397.87499567866325, 663.888920545578, 124.0, 136.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_longname": "Halaphon1_4ChsOut",
@@ -9643,7 +9638,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-918", 0 ],
-                                    "midpoints": [ 277.5, 525.0, 412.5, 525.0 ],
+                                    "midpoints": [ 277.5, 618.0555599927902, 407.37499567866325, 618.0555599927902 ],
                                     "source": [ "obj-4", 0 ]
                                 }
                             },
@@ -23197,17 +23192,19 @@
             "obj-48::obj-7::obj-15": [ "PingPongHorizOffset[2]", "PingPongHorizOffset", 0 ],
             "obj-48::obj-7::obj-16": [ "PingPongVertiFreq[2]", "PingPongVertiFreq", 0 ],
             "obj-48::obj-7::obj-17": [ "PingpongVertOffset[2]", "PingpongVertOffset", 0 ],
+            "obj-48::obj-7::obj-24": [ "Nodesize[2]", "NodesizeDelay1", 0 ],
             "obj-48::obj-7::obj-31": [ "HorizontalPingPongOffsetCycle[2]", "HorizontalPingPongOffsetCycle", 0 ],
             "obj-48::obj-7::obj-37": [ "Fixedpanner1[1]", "Fixedpanner1", 0 ],
             "obj-48::obj-7::obj-38": [ "Fixedpanner2[1]", "Fixedpanner2", 0 ],
+            "obj-48::obj-7::obj-39": [ "Nodesize[7]", "NodesizeDelay1", 0 ],
+            "obj-48::obj-7::obj-41": [ "Nodesize[6]", "NodesizeDelay1", 0 ],
             "obj-48::obj-7::obj-419": [ "CycleCircleFreq[2]", "CycleCircleFreq", 0 ],
             "obj-48::obj-7::obj-420": [ "CycleCircleOffset[2]", "CycleCircleOffset", 0 ],
             "obj-48::obj-7::obj-470": [ "umenu[2]", "umenu", 0 ],
             "obj-48::obj-7::obj-495": [ "randompanningmatrix[2]", "randompanningmatrix", 0 ],
-            "obj-48::obj-7::obj-497": [ "Randompanningspeed[2]", "Randompanningspeed", 0 ],
             "obj-48::obj-7::obj-677": [ "tab[1]", "circlepanningmodes", 0 ],
             "obj-48::obj-7::obj-7": [ "PhasorHorizFreq[2]", "PhasorHorizFreq", 0 ],
-            "obj-48::obj-7::obj-728": [ "Nodesize[2]", "NodesizeDelay1", 0 ],
+            "obj-48::obj-7::obj-728": [ "Nodesize[8]", "NodesizeDelay1", 0 ],
             "obj-48::obj-7::obj-8": [ "PhasorHorizOffset[2]", "PhasorHorizOffset", 0 ],
             "obj-48::obj-7::obj-84": [ "VerticalPingPongOffsetCycle[19]", "VerticalPingPongOffsetCycle[1]", 0 ],
             "obj-48::obj-7::obj-85": [ "VerticalPingPongOffsetCycle[1]", "VerticalPingPongOffsetCycle[1]", 0 ],
@@ -23219,14 +23216,16 @@
             "obj-49::obj-7::obj-15": [ "PingPongHorizOffset[1]", "PingPongHorizOffset", 0 ],
             "obj-49::obj-7::obj-16": [ "PingPongVertiFreq[1]", "PingPongVertiFreq", 0 ],
             "obj-49::obj-7::obj-17": [ "PingpongVertOffset[1]", "PingpongVertOffset", 0 ],
+            "obj-49::obj-7::obj-24": [ "Nodesize[3]", "NodesizeDelay1", 0 ],
             "obj-49::obj-7::obj-31": [ "HorizontalPingPongOffsetCycle[1]", "HorizontalPingPongOffsetCycle", 0 ],
             "obj-49::obj-7::obj-37": [ "Fixedpanner1", "Fixedpanner1", 0 ],
             "obj-49::obj-7::obj-38": [ "Fixedpanner2", "Fixedpanner2", 0 ],
+            "obj-49::obj-7::obj-39": [ "Nodesize[4]", "NodesizeDelay1", 0 ],
+            "obj-49::obj-7::obj-41": [ "Nodesize[5]", "NodesizeDelay1", 0 ],
             "obj-49::obj-7::obj-419": [ "CycleCircleFreq[1]", "CycleCircleFreq", 0 ],
             "obj-49::obj-7::obj-420": [ "CycleCircleOffset[1]", "CycleCircleOffset", 0 ],
             "obj-49::obj-7::obj-470": [ "umenu[1]", "umenu", 0 ],
             "obj-49::obj-7::obj-495": [ "randompanningmatrix[1]", "randompanningmatrix", 0 ],
-            "obj-49::obj-7::obj-497": [ "Randompanningspeed[1]", "Randompanningspeed", 0 ],
             "obj-49::obj-7::obj-677": [ "tab[9]", "circlepanningmodes", 0 ],
             "obj-49::obj-7::obj-7": [ "PhasorHorizFreq[1]", "PhasorHorizFreq", 0 ],
             "obj-49::obj-7::obj-728": [ "Nodesize[1]", "NodesizeDelay1", 0 ],
@@ -23239,6 +23238,14 @@
             "obj-80": [ "DrywetPublison1", "DrywetPublison1", 0 ],
             "obj-81": [ "button", "button", 0 ],
             "obj-9": [ "umenu[3]", "umenu[3]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

@@ -4,14 +4,115 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 0,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 184.0, 287.0, 1415.0, 836.0 ],
+        "rect": [ 264.0, 202.0, 1415.0, 836.0 ],
         "subpatcher_template": "Default Max 7",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-27",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 265.07936918735504, -61.904762864112854, 74.0, 22.0 ],
+                    "text": "r myinitbang"
+                }
+            },
+            {
+                "box": {
+                    "bgcolor": [ 0.482352941176471, 0.0, 0.0, 1.0 ],
+                    "fontsize": 11.0,
+                    "format": 6,
+                    "id": "obj-39",
+                    "maxclass": "flonum",
+                    "maximum": 1.0,
+                    "minimum": 0.05,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 281.39535319805145, 70.027781188488, 44.60784590244293, 21.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_initial": [ 0.575 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_longname": "Nodesize[7]",
+                            "parameter_mmax": 1.0,
+                            "parameter_mmin": 0.05,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "NodesizeDelay1",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 1
+                        }
+                    },
+                    "varname": "NodesizeDelay1[2]"
+                }
+            },
+            {
+                "box": {
+                    "bgcolor": [ 0.482352941176471, 0.0, 0.0, 1.0 ],
+                    "fontsize": 11.0,
+                    "format": 6,
+                    "id": "obj-41",
+                    "maxclass": "flonum",
+                    "maximum": 1.0,
+                    "minimum": 0.05,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 281.39535319805145, 45.218386590480804, 44.60784590244293, 21.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_initial": [ 0.575 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_longname": "Nodesize[6]",
+                            "parameter_mmax": 1.0,
+                            "parameter_mmin": 0.05,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "NodesizeDelay1",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 1
+                        }
+                    },
+                    "varname": "NodesizeDelay1[3]"
+                }
+            },
+            {
+                "box": {
+                    "bgcolor": [ 0.482352941176471, 0.0, 0.0, 1.0 ],
+                    "fontsize": 11.0,
+                    "format": 6,
+                    "id": "obj-24",
+                    "maxclass": "flonum",
+                    "maximum": 1.0,
+                    "minimum": 0.05,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 231.11038851737976, 70.027781188488, 44.60784590244293, 21.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_initial": [ 0.575 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_longname": "Nodesize[2]",
+                            "parameter_mmax": 1.0,
+                            "parameter_mmin": 0.05,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "NodesizeDelay1",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 1
+                        }
+                    },
+                    "varname": "NodesizeDelay1[1]"
+                }
+            },
             {
                 "box": {
                     "id": "obj-23",
@@ -19,7 +120,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 220.0, -31.0, 93.0, 22.0 ],
+                    "patching_rect": [ 265.07936918735504, -33.33333384990692, 93.0, 22.0 ],
                     "text": "loadmess 0.575"
                 }
             },
@@ -98,7 +199,7 @@
                     "patching_rect": [ 233.0, 135.359129011631, 49.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "Fixedpanner2",
+                            "parameter_longname": "Fixedpanner2[1]",
                             "parameter_mmax": 1.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "Fixedpanner2",
@@ -123,7 +224,7 @@
                     "patching_rect": [ 134.6574491262436, 132.0442115664482, 49.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "Fixedpanner1",
+                            "parameter_longname": "Fixedpanner1[1]",
                             "parameter_mmax": 1.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "Fixedpanner1",
@@ -140,7 +241,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 942.6829493045807, 20.73170781135559, 58.0, 22.0 ],
+                    "patching_rect": [ 652.7131884098053, -52.71317911148071, 58.0, 22.0 ],
                     "text": "loadbang"
                 }
             },
@@ -148,7 +249,7 @@
                 "box": {
                     "id": "obj-34",
                     "maxclass": "newobj",
-                    "numinlets": 1,
+                    "numinlets": 4,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patcher": {
@@ -156,14 +257,50 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 134.0, 159.0, 753.0, 531.0 ],
+                        "rect": [ 693.0, 211.0, 753.0, 531.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-3",
+                                    "index": 4,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 201.0, 30.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-2",
+                                    "index": 3,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 157.52150917053223, 30.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-1",
+                                    "index": 2,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 115.0, 30.0, 30.0, 30.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-725",
@@ -217,7 +354,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 87.01076198014835, 39.99999802987671, 30.0, 30.0 ]
+                                    "patching_rect": [ 71.5, 30.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -235,29 +372,25 @@
                         "lines": [
                             {
                                 "patchline": {
-                                    "destination": [ "obj-723", 0 ],
-                                    "order": 3,
-                                    "source": [ "obj-32", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-724", 0 ],
-                                    "order": 1,
-                                    "source": [ "obj-32", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-725", 0 ],
-                                    "order": 0,
-                                    "source": [ "obj-32", 0 ]
+                                    "source": [ "obj-1", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-726", 0 ],
-                                    "order": 2,
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-725", 0 ],
+                                    "source": [ "obj-3", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-723", 0 ],
                                     "source": [ "obj-32", 0 ]
                                 }
                             },
@@ -311,7 +444,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -474,7 +607,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "PhasorHorizOffsetCycle[1]",
+                            "parameter_longname": "PhasorHorizOffsetCycle[2]",
                             "parameter_mmax": 10.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "PhasorHorizOffsetCycle",
@@ -498,7 +631,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -937,7 +1070,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1385,7 +1518,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "VerticalPingPongOffsetCycle[18]",
+                            "parameter_longname": "VerticalPingPongOffsetCycle[1]",
                             "parameter_mmax": 10.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "VerticalPingPongOffsetCycle[1]",
@@ -1418,7 +1551,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "VerticalPingPongOffsetCycle[17]",
+                            "parameter_longname": "VerticalPingPongOffsetCycle[19]",
                             "parameter_mmax": 10.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "VerticalPingPongOffsetCycle[1]",
@@ -1442,7 +1575,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1881,7 +2014,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -2332,7 +2465,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -2780,7 +2913,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "HorizontalPingPongOffsetCycle[1]",
+                            "parameter_longname": "HorizontalPingPongOffsetCycle[2]",
                             "parameter_mmax": 10.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "HorizontalPingPongOffsetCycle",
@@ -2794,22 +2927,6 @@
             },
             {
                 "box": {
-                    "bgcolor": [ 0.0, 0.227450980392157, 0.482352941176471, 1.0 ],
-                    "fontface": 0,
-                    "fontsize": 9.0,
-                    "hidden": 1,
-                    "id": "obj-27",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 229.861122071743, 111.8055608868599, 46.56863033771515, 17.0 ],
-                    "text": "Speed",
-                    "textcolor": [ 1.0, 0.980392156862745, 0.980392156862745, 1.0 ],
-                    "varname": "Speedsign"
-                }
-            },
-            {
-                "box": {
                     "bgcolor": [ 0.443137254901961, 0.0, 0.0, 1.0 ],
                     "fontface": 0,
                     "fontsize": 9.0,
@@ -2817,20 +2934,9 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 229.16667759418488, 71.527781188488, 48.0, 17.0 ],
-                    "text": "NodeSize",
+                    "patching_rect": [ 257.36434507369995, 99.89188754558563, 52.77922296524048, 17.0 ],
+                    "text": "NodeSizes",
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-22",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 768.7499266862869, 96.2499908208847, 39.0, 22.0 ],
-                    "text": "0.575"
                 }
             },
             {
@@ -2845,7 +2951,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3032,7 +3138,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 896.2499145269394, 101.24999034404755, 35.0, 22.0 ],
+                    "patching_rect": [ 606.2015597820282, 27.90697717666626, 35.0, 22.0 ],
                     "text": "0 0 1"
                 }
             },
@@ -3048,7 +3154,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3452,7 +3558,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3717,7 +3823,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3866,7 +3972,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "PingPongVertiFreq[1]",
+                            "parameter_longname": "PingPongVertiFreq[2]",
                             "parameter_mmax": 10.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "PingPongVertiFreq",
@@ -3895,7 +4001,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.2 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "PingpongVertOffset[1]",
+                            "parameter_longname": "PingpongVertOffset[2]",
                             "parameter_mmax": 0.8,
                             "parameter_mmin": 0.2,
                             "parameter_modmode": 3,
@@ -3925,7 +4031,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "PingPongHorizFreq[1]",
+                            "parameter_longname": "PingPongHorizFreq[2]",
                             "parameter_mmax": 10.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "PingPongHorizFreq",
@@ -3954,7 +4060,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.8 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "PingPongHorizOffset[1]",
+                            "parameter_longname": "PingPongHorizOffset[2]",
                             "parameter_mmax": 0.8,
                             "parameter_mmin": 0.2,
                             "parameter_modmode": 3,
@@ -3984,7 +4090,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "PhasorHorizFreq[1]",
+                            "parameter_longname": "PhasorHorizFreq[2]",
                             "parameter_mmax": 10.0,
                             "parameter_mmin": -10.0,
                             "parameter_modmode": 3,
@@ -4014,7 +4120,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "PhasorVertOffset[1]",
+                            "parameter_longname": "PhasorVertOffset[2]",
                             "parameter_mmax": 1.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "PhasorVertOffset",
@@ -4043,7 +4149,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "PhasorvertFreq[1]",
+                            "parameter_longname": "PhasorvertFreq[2]",
                             "parameter_mmax": 10.0,
                             "parameter_mmin": -10.0,
                             "parameter_modmode": 3,
@@ -4073,7 +4179,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "PhasorHorizOffset[1]",
+                            "parameter_longname": "PhasorHorizOffset[2]",
                             "parameter_mmax": 1.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "PhasorHorizOffset",
@@ -4097,12 +4203,12 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 220.0, 45.218386590480804, 44.60784590244293, 21.0 ],
+                    "patching_rect": [ 228.634460657835, 45.218386590480804, 44.60784590244293, 21.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_initial": [ 0.575 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "Nodesize[1]",
+                            "parameter_longname": "Nodesize[8]",
                             "parameter_mmax": 1.0,
                             "parameter_mmin": 0.05,
                             "parameter_modmode": 3,
@@ -4132,19 +4238,19 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 822.9999227523804, 17.499998331069946, 58.0, 22.0 ],
+                    "patching_rect": [ 533.3333415985107, -55.81395435333252, 58.0, 22.0 ],
                     "text": "loadbang"
                 }
             },
             {
                 "box": {
                     "id": "obj-746",
-                    "linecount": 4,
+                    "linecount": 5,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 783.8710023164749, 154.28573405742645, 200.81966638565063, 62.0 ],
+                    "patching_rect": [ 783.8710023164749, 292.2480665445328, 157.0, 76.0 ],
                     "text": "nodecolor 1. 0. 0. 0.2., candycane 4, candycane2 0. 0. 1. 0.2., candycane3 1. 1. 0. 0.2., candycane4 0. 1. 0. 0.2."
                 }
             },
@@ -4166,7 +4272,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 728.0487978458405, 17.499998331069946, 58.0, 22.0 ],
+                    "patching_rect": [ 437.9845029115677, -55.81395435333252, 58.0, 22.0 ],
                     "text": "loadbang"
                 }
             },
@@ -4177,7 +4283,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 809.9999227523804, 96.2499908208847, 71.0, 22.0 ],
+                    "patching_rect": [ 520.1550468206406, 22.480620503425598, 71.0, 22.0 ],
                     "text": "clickvalue 1"
                 }
             },
@@ -4220,7 +4326,7 @@
                         "valueof": {
                             "parameter_enum": [ "1-3", "CCW", "2-4", "CW" ],
                             "parameter_initial": [ 3.0 ],
-                            "parameter_longname": "tab[9]",
+                            "parameter_longname": "tab[1]",
                             "parameter_mmax": 3,
                             "parameter_modmode": 0,
                             "parameter_shortname": "circlepanningmodes",
@@ -4231,37 +4337,6 @@
                     "tabs": [ "1-3", "CCW", "2-4", "CW" ],
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "varname": "circlepanningmodes"
-                }
-            },
-            {
-                "box": {
-                    "bgcolor": [ 0.0, 0.274509803921569, 0.647058823529412, 1.0 ],
-                    "fontsize": 11.0,
-                    "format": 6,
-                    "hidden": 1,
-                    "id": "obj-497",
-                    "ignoreclick": 1,
-                    "maxclass": "flonum",
-                    "maximum": 10000.0,
-                    "minimum": 0.0,
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 229.861122071743, 88.8888931274414, 45.098042011260986, 21.0 ],
-                    "saved_attribute_attributes": {
-                        "valueof": {
-                            "parameter_initial": [ 1000.0 ],
-                            "parameter_initial_enable": 1,
-                            "parameter_longname": "Randompanningspeed[1]",
-                            "parameter_mmax": 10000.0,
-                            "parameter_modmode": 3,
-                            "parameter_shortname": "Randompanningspeed",
-                            "parameter_type": 0,
-                            "parameter_unitstyle": 1
-                        }
-                    },
-                    "varname": "Randompanningspeed"
                 }
             },
             {
@@ -4285,7 +4360,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_invisible": 1,
-                            "parameter_longname": "randompanningmatrix[1]",
+                            "parameter_longname": "randompanningmatrix[2]",
                             "parameter_modmode": 0,
                             "parameter_shortname": "randompanningmatrix",
                             "parameter_type": 3
@@ -4321,7 +4396,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "Off", "Cyclepanning", "PhasorVert", "PhasorHoriz", "PingPongHorizontal", "PingPongVertical", "Randompanning", "Fixed" ],
-                            "parameter_longname": "umenu[1]",
+                            "parameter_longname": "umenu[2]",
                             "parameter_mmax": 7,
                             "parameter_modmode": 0,
                             "parameter_shortname": "umenu",
@@ -4352,7 +4427,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "CycleCircleFreq[1]",
+                            "parameter_longname": "CycleCircleFreq[2]",
                             "parameter_mmax": 5.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "CycleCircleFreq",
@@ -4382,7 +4457,7 @@
                         "valueof": {
                             "parameter_initial": [ 0.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "CycleCircleOffset[1]",
+                            "parameter_longname": "CycleCircleOffset[2]",
                             "parameter_mmax": 2.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "CycleCircleOffset",
@@ -4404,7 +4479,7 @@
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ -2.2138746082782745, 0.577235758304596, 325.19686764478683, 180.31497019529343 ],
+                    "patching_rect": [ -2.325581431388855, 0.7751938104629517, 334.8837261199951, 180.62015783786774 ],
                     "proportion": 0.5
                 }
             }
@@ -4481,20 +4556,43 @@
             {
                 "patchline": {
                     "destination": [ "obj-495", 0 ],
-                    "midpoints": [ 905.7499145269394, 132.0, 426.0, 132.0, 426.0, -3.0, 187.93138360977173, -3.0 ],
+                    "midpoints": [ 615.7015597820282, 60.0, 333.0, 60.0, 333.0, 0.0, 324.0, 0.0, 324.0, -3.0, 187.93138360977173, -3.0 ],
                     "source": [ "obj-21", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-728", 0 ],
-                    "source": [ "obj-22", 0 ]
+                    "destination": [ "obj-24", 0 ],
+                    "order": 2,
+                    "source": [ "obj-23", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-39", 0 ],
+                    "order": 0,
+                    "source": [ "obj-23", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-41", 0 ],
+                    "order": 1,
+                    "source": [ "obj-23", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-728", 0 ],
+                    "order": 3,
                     "source": [ "obj-23", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-34", 2 ],
+                    "midpoints": [ 240.61038851737976, 99.0, 294.0, 99.0, 294.0, 101.57364177703857, 984.9624074697495, 101.57364177703857 ],
+                    "source": [ "obj-24", 0 ]
                 }
             },
             {
@@ -4555,29 +4653,28 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-23", 0 ],
+                    "source": [ "obj-27", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-21", 0 ],
-                    "order": 0,
-                    "source": [ "obj-28", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-22", 0 ],
-                    "order": 3,
-                    "source": [ "obj-28", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-4", 0 ],
                     "order": 1,
                     "source": [ "obj-28", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-746", 0 ],
+                    "destination": [ "obj-4", 0 ],
                     "order": 2,
+                    "source": [ "obj-28", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-746", 0 ],
+                    "order": 0,
                     "source": [ "obj-28", 0 ]
                 }
             },
@@ -4635,8 +4732,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-34", 3 ],
+                    "midpoints": [ 290.89535319805145, 93.0, 997.9624074697495, 93.0 ],
+                    "source": [ "obj-39", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-495", 0 ],
-                    "midpoints": [ 819.4999227523804, 126.0, 426.0, 126.0, 426.0, -3.0, 187.93138360977173, -3.0 ],
+                    "midpoints": [ 529.6550468206406, 54.4806205034256, 358.79321521520615, 54.4806205034256, 358.79321521520615, -9.509803891181946, 187.93138360977173, -9.509803891181946 ],
                     "source": [ "obj-4", 0 ]
                 }
             },
@@ -4644,6 +4748,13 @@
                 "patchline": {
                     "destination": [ "obj-420", 0 ],
                     "source": [ "obj-40", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-34", 1 ],
+                    "midpoints": [ 290.89535319805145, 69.0, 971.9624074697495, 69.0 ],
+                    "source": [ "obj-41", 0 ]
                 }
             },
             {
@@ -4694,14 +4805,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-707", 14 ],
-                    "source": [ "obj-497", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-746", 0 ],
-                    "midpoints": [ 832.4999227523804, 63.0, 729.0, 63.0, 729.0, 139.7619053721428, 793.3710023164749, 139.7619053721428 ],
+                    "midpoints": [ 542.8333415985107, -10.66557776927948, 438.9274549484253, -10.66557776927948, 438.9274549484253, 66.09632760286331, 793.3710023164749, 66.09632760286331 ],
                     "source": [ "obj-5", 0 ]
                 }
             },
@@ -4732,6 +4837,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-34", 0 ],
+                    "midpoints": [ 238.134460657835, 66.0, 958.9624074697495, 66.0 ],
                     "source": [ "obj-728", 0 ]
                 }
             },
@@ -4799,13 +4905,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-22", 0 ],
-                    "order": 2,
-                    "source": [ "obj-9", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-4", 0 ],
                     "order": 1,
                     "source": [ "obj-9", 0 ]
@@ -4819,27 +4918,37 @@
             }
         ],
         "parameters": {
-            "obj-10": [ "PhasorVertOffset[1]", "PhasorVertOffset", 0 ],
-            "obj-11": [ "PhasorvertFreq[1]", "PhasorvertFreq", 0 ],
-            "obj-14": [ "PingPongHorizFreq[1]", "PingPongHorizFreq", 0 ],
-            "obj-15": [ "PingPongHorizOffset[1]", "PingPongHorizOffset", 0 ],
-            "obj-16": [ "PingPongVertiFreq[1]", "PingPongVertiFreq", 0 ],
-            "obj-17": [ "PingpongVertOffset[1]", "PingpongVertOffset", 0 ],
-            "obj-31": [ "HorizontalPingPongOffsetCycle[1]", "HorizontalPingPongOffsetCycle", 0 ],
-            "obj-37": [ "Fixedpanner1", "Fixedpanner1", 0 ],
-            "obj-38": [ "Fixedpanner2", "Fixedpanner2", 0 ],
-            "obj-419": [ "CycleCircleFreq[1]", "CycleCircleFreq", 0 ],
-            "obj-420": [ "CycleCircleOffset[1]", "CycleCircleOffset", 0 ],
-            "obj-470": [ "umenu[1]", "umenu", 0 ],
-            "obj-495": [ "randompanningmatrix[1]", "randompanningmatrix", 0 ],
-            "obj-497": [ "Randompanningspeed[1]", "Randompanningspeed", 0 ],
-            "obj-677": [ "tab[9]", "circlepanningmodes", 0 ],
-            "obj-7": [ "PhasorHorizFreq[1]", "PhasorHorizFreq", 0 ],
-            "obj-728": [ "Nodesize[1]", "NodesizeDelay1", 0 ],
-            "obj-8": [ "PhasorHorizOffset[1]", "PhasorHorizOffset", 0 ],
-            "obj-84": [ "VerticalPingPongOffsetCycle[17]", "VerticalPingPongOffsetCycle[1]", 0 ],
-            "obj-85": [ "VerticalPingPongOffsetCycle[18]", "VerticalPingPongOffsetCycle[1]", 0 ],
-            "obj-90": [ "PhasorHorizOffsetCycle[1]", "PhasorHorizOffsetCycle", 0 ],
+            "obj-10": [ "PhasorVertOffset[2]", "PhasorVertOffset", 0 ],
+            "obj-11": [ "PhasorvertFreq[2]", "PhasorvertFreq", 0 ],
+            "obj-14": [ "PingPongHorizFreq[2]", "PingPongHorizFreq", 0 ],
+            "obj-15": [ "PingPongHorizOffset[2]", "PingPongHorizOffset", 0 ],
+            "obj-16": [ "PingPongVertiFreq[2]", "PingPongVertiFreq", 0 ],
+            "obj-17": [ "PingpongVertOffset[2]", "PingpongVertOffset", 0 ],
+            "obj-24": [ "Nodesize[2]", "NodesizeDelay1", 0 ],
+            "obj-31": [ "HorizontalPingPongOffsetCycle[2]", "HorizontalPingPongOffsetCycle", 0 ],
+            "obj-37": [ "Fixedpanner1[1]", "Fixedpanner1", 0 ],
+            "obj-38": [ "Fixedpanner2[1]", "Fixedpanner2", 0 ],
+            "obj-39": [ "Nodesize[7]", "NodesizeDelay1", 0 ],
+            "obj-41": [ "Nodesize[6]", "NodesizeDelay1", 0 ],
+            "obj-419": [ "CycleCircleFreq[2]", "CycleCircleFreq", 0 ],
+            "obj-420": [ "CycleCircleOffset[2]", "CycleCircleOffset", 0 ],
+            "obj-470": [ "umenu[2]", "umenu", 0 ],
+            "obj-495": [ "randompanningmatrix[2]", "randompanningmatrix", 0 ],
+            "obj-677": [ "tab[1]", "circlepanningmodes", 0 ],
+            "obj-7": [ "PhasorHorizFreq[2]", "PhasorHorizFreq", 0 ],
+            "obj-728": [ "Nodesize[8]", "NodesizeDelay1", 0 ],
+            "obj-8": [ "PhasorHorizOffset[2]", "PhasorHorizOffset", 0 ],
+            "obj-84": [ "VerticalPingPongOffsetCycle[19]", "VerticalPingPongOffsetCycle[1]", 0 ],
+            "obj-85": [ "VerticalPingPongOffsetCycle[1]", "VerticalPingPongOffsetCycle[1]", 0 ],
+            "obj-90": [ "PhasorHorizOffsetCycle[2]", "PhasorHorizOffsetCycle", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0
