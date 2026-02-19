@@ -55,8 +55,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 50.0, 143.0, 112.0, 22.0 ],
-                    "text": "expr pow($f1\\, 1.35)"
+                    "patching_rect": [ 50.0, 143.0, 95.0, 22.0 ],
+                    "text": "expr pow($f1\\, 1)"
                 }
             },
             {

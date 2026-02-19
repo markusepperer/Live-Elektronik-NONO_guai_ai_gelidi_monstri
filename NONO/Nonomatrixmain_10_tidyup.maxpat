@@ -16,6 +16,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-349",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 758.6666892766953, 2104.0000627040863, 34.0, 22.0 ],
+                    "text": "*~ 1."
+                }
+            },
+            {
+                "box": {
                     "id": "obj-347",
                     "maxclass": "newobj",
                     "numinlets": 2,
@@ -2472,7 +2483,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 1157.0717065930367, 2052.941262125969, 65.0, 35.0 ],
+                    "patching_rect": [ 1156.9712859988213, 2052.941262125969, 65.0, 35.0 ],
                     "text": "receive~ REV_AFL"
                 }
             },
@@ -2497,7 +2508,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 997.7796583771706, 2052.941262125969, 66.34615606069565, 35.0 ],
+                    "patching_rect": [ 969.4836239218712, 2033.3333139419556, 66.34615606069565, 35.0 ],
                     "text": "receive~ ALT1_AFL"
                 }
             },
@@ -4424,7 +4435,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 141.21620678901672, 297.2972774505615, 50.0, 22.0 ],
-                                    "text": "83"
+                                    "text": "81"
                                 }
                             },
                             {
@@ -4456,7 +4467,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 131.7567479610443, 256.75673961639404, 50.0, 22.0 ],
-                                    "text": "0"
+                                    "text": "78"
                                 }
                             },
                             {
@@ -18432,9 +18443,152 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 302.0, 294.0, 910.0, 559.0 ],
+                        "rect": [ 473.0, 330.0, 1110.0, 635.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-52",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 207.0, 358.0, 75.0, 23.0 ],
+                                    "text": "write"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-53",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 207.0, 323.0, 75.0, 23.0 ],
+                                    "text": "read"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "autosave": 1,
+                                    "bgmode": 0,
+                                    "border": 0,
+                                    "clickthrough": 0,
+                                    "id": "obj-18",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 8,
+                                    "offset": [ 0.0, 0.0 ],
+                                    "outlettype": [ "signal", "signal", "", "list", "int", "", "", "" ],
+                                    "patching_rect": [ 153.0, 410.0, 556.0, 207.0 ],
+                                    "save": [ "#N", "vst~", "loaduniqueid", 0, "C74_VST3:/FabFilter Pro-R 2", ";" ],
+                                    "saved_attribute_attributes": {
+                                        "valueof": {
+                                            "parameter_invisible": 1,
+                                            "parameter_longname": "vst~",
+                                            "parameter_modmode": 0,
+                                            "parameter_shortname": "vst~",
+                                            "parameter_type": 3
+                                        }
+                                    },
+                                    "saved_object_attributes": {
+                                        "parameter_enable": 1,
+                                        "parameter_mappable": 0
+                                    },
+                                    "snapshot": {
+                                        "filetype": "C74Snapshot",
+                                        "version": 2,
+                                        "minorversion": 0,
+                                        "name": "snapshotlist",
+                                        "origin": "vst~",
+                                        "type": "list",
+                                        "subtype": "Undefined",
+                                        "embed": 1,
+                                        "snapshot": {
+                                            "pluginname": "FabFilter Pro-R 2.vst3info",
+                                            "plugindisplayname": "Pro-R 2",
+                                            "pluginsavedname": "",
+                                            "pluginsaveduniqueid": 0,
+                                            "version": 1,
+                                            "isbank": 0,
+                                            "isbase64": 1,
+                                            "sliderorder": [],
+                                            "slidervisibility": [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0 ],
+                                            "blob": "1016.VMjLg79....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TiM33hQYoFTSUjKt3hKtflKt3hKrolZDshKt3hKtXFaYw1cO4hKt3xJt3hKt3BT4wTdx8jKt3hKt3hKt3hKt3hKt3hKt3hK3ITPt3hKt3hKt3hKt3hKlQ1PA4hKt3hKt3hKt3hKt3hKtnGS4wzLC4hKt3hKt3hKt3hKt3hK4LjKt3xLOIzJMMTPAIVU4IyPHgSN28jKt3hKt3hKt3RNC4hKtLySt3hKlsBTYQTZCQjKzYTZOM0UFUWNt3hKtjyPt3hKy7jKt3hYq3hKt3RNCEiVwQETrIlZqrhU2fUT0LjKt3hKP4hKtX1Jt3hKtjyPt3hKy7jQgwzMtDzUA01L1jFQOc2St3hKt3hKt3hK4LjKt3hKt3hKt3hK5c0JoUDQBkmZ58TL4T1Rq3hKt3hKt3hKtLySt3hKt3hKt3hKtXVL4gSTP4hKt3hKt3hKtbyPt3hKt3hKt3hYq3hKt3RNC4hKtLyS2nmZn4RPt3hKtvjKt3hcO4hKt.kKA4hKtjyPt3hKt.kKt3hYq3hKt3hKt3hKt3hKx.iaVEzYKAGbBIWUuklcO4hKt.kKA4hKtjyPt3hKt.kKt3hYq3hKt3RNC4hKtLySHY2J13RPgk0PAI2RYczcO4hKt3hKt3hKtjyPt3hKt.kKt3hYq3hKt3RNC4hKtLyS3kVTFEzYyTyYtHWQynDcO4hKt.kKA4hKtjyPt3hKt.kKt3hYq3hKt3hKt3hKt3hKZ8jLGETPt3hKt3hKt3hcO4hKt3hKt3hKtjyPt3hKt.kKt3hYq3hKt3hKt3hKt3hKZ8jLGETPt3hKt3hKt3hcO4hKt3hKt3hKtjyPt3hKt.kKt3hYq3hKt3xMC4hKtX2St3hKtrhKt3hK2LjKt3hcO4hKt3xJt3hKtbyPt3hK18jKt3hKq3hKt3hKPkGS4o2SMkGSSshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLySt3hKt3BVpEkcIckKt3hKt3hKt3hKtvyKIMzasA2atUlaz4COIUDYoQ2Pu4Fcx8FarUlb9fSLtXTRqwjcM4hKt3BTG4hKt3xP3vVXoUEahoWPBI0Y2YTXlQDUgkWTWkEdQYEVyEjTSUWTVkEdzDyJqrxJqDjKt3hKt3hKt3BTt3hKt3xPUICUVUjKt3hKt3hKt3hKFkEUYoVPt3hKt3hKt3xLOwyKIUDYoQ2Pu4Fcx8FarUlb9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+                                        },
+                                        "snapshotlist": {
+                                            "current_snapshot": 1,
+                                            "entries": [
+                                                {
+                                                    "filetype": "C74Snapshot",
+                                                    "version": 2,
+                                                    "minorversion": 0,
+                                                    "name": "Pro-R 2",
+                                                    "origin": "FabFilter Pro-R 2.vst3info",
+                                                    "type": "VST3",
+                                                    "subtype": "MidiEffect",
+                                                    "embed": 0,
+                                                    "snapshot": {
+                                                        "pluginname": "FabFilter Pro-R 2.vst3info",
+                                                        "plugindisplayname": "Pro-R 2",
+                                                        "pluginsavedname": "",
+                                                        "pluginsaveduniqueid": 0,
+                                                        "version": 1,
+                                                        "isbank": 0,
+                                                        "isbase64": 1,
+                                                        "sliderorder": [],
+                                                        "slidervisibility": [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0 ],
+                                                        "blob": "1016.VMjLg79....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TiM33hQYoFTSUjKt3hKtflKt3hKrolZDshKt3hKtXFaYw1cO4hKt3xJt3hKt3BT4wTdx8jKt3hKt3hKt3hKt3hKt3hKt3hK3ITPt3hKt3hKt3hKt3hKlQ1PA4hKt3hKt3hKt3hKt3hKtnGS4wzLC4hKt3hKt3hKt3hKt3hK4LjKt3xLOIzJMMTPAIVU4IyPHgSN28jKt3hKt3hKt3RNC4hKtLySt3hKlsBTYQTZCQjKzYTZOM0UFUWNt3hKtjyPt3hKy7jKt3hYq3hKt3RNCEiVwQETrIlZqrhU2fUT0LjKt3hKP4hKtX1Jt3hKtjyPt3hKy7jQgwzMtDzUA01L1jFQOc2St3hKt3hKt3hK4LjKt3hKt3hKt3hK5c0JoUDQBkmZ58TL4T1Rq3hKt3hKt3hKtLySt3hKt3hKt3hKtXVL4gSTP4hKt3hKt3hKtbyPt3hKt3hKt3hYq3hKt3RNC4hKtLyS2nmZn4RPt3hKtvjKt3hcO4hKt.kKA4hKtjyPt3hKt.kKt3hYq3hKt3hKt3hKt3hKx.iaVEzYKAGbBIWUuklcO4hKt.kKA4hKtjyPt3hKt.kKt3hYq3hKt3RNC4hKtLySHY2J13RPgk0PAI2RYczcO4hKt3hKt3hKtjyPt3hKt.kKt3hYq3hKt3RNC4hKtLyS3kVTFEzYyTyYtHWQynDcO4hKt.kKA4hKtjyPt3hKt.kKt3hYq3hKt3hKt3hKt3hKZ8jLGETPt3hKt3hKt3hcO4hKt3hKt3hKtjyPt3hKt.kKt3hYq3hKt3hKt3hKt3hKZ8jLGETPt3hKt3hKt3hcO4hKt3hKt3hKtjyPt3hKt.kKt3hYq3hKt3xMC4hKtX2St3hKtrhKt3hK2LjKt3hcO4hKt3xJt3hKtbyPt3hK18jKt3hKq3hKt3hKPkGS4o2SMkGSSshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLySt3hKt3BVpEkcIckKt3hKt3hKt3hKtvyKIMzasA2atUlaz4COIUDYoQ2Pu4Fcx8FarUlb9fSLtXTRqwjcM4hKt3BTG4hKt3xP3vVXoUEahoWPBI0Y2YTXlQDUgkWTWkEdQYEVyEjTSUWTVkEdzDyJqrxJqDjKt3hKt3hKt3BTt3hKt3xPUICUVUjKt3hKt3hKt3hKFkEUYoVPt3hKt3hKt3xLOwyKIUDYoQ2Pu4Fcx8FarUlb9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+                                                    },
+                                                    "fileref": {
+                                                        "name": "Pro-R 2",
+                                                        "filename": "Pro-R 2_20260219.maxsnap",
+                                                        "filepath": "~/Documents/Max 9/Snapshots",
+                                                        "filepos": -1,
+                                                        "snapshotfileid": "31515456e4b3e496a34310ef85310389"
+                                                    }
+                                                },
+                                                {
+                                                    "filetype": "C74Snapshot",
+                                                    "version": 2,
+                                                    "minorversion": 0,
+                                                    "name": "Pro-R 2[1]",
+                                                    "origin": "FabFilter Pro-R 2.vst3info",
+                                                    "type": "VST3",
+                                                    "subtype": "MidiEffect",
+                                                    "embed": 0,
+                                                    "snapshot": {
+                                                        "pluginname": "FabFilter Pro-R 2.vst3info",
+                                                        "plugindisplayname": "Pro-R 2",
+                                                        "pluginsavedname": "",
+                                                        "pluginsaveduniqueid": 0,
+                                                        "version": 1,
+                                                        "isbank": 0,
+                                                        "isbase64": 1,
+                                                        "sliderorder": [],
+                                                        "slidervisibility": [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0 ],
+                                                        "blob": "1016.VMjLg79....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TiM33hQYoFTSUjKt3hKtflKt3hKrolZDshKt3hKtXFaYw1cO4hKt3xJt3hKt3BT4wTdx8jKt3hKt3hKt3hKt3hKt3hKt3hK3ITPt3hKt3hKt3hKt3hKlQ1PA4hKt3hKt3hKt3hKt3hKtnGS4wzLC4hKt3hKt3hKt3hKt3hK4LjKt3xLOIzJMMTPAIVU4IyPHgSN28jKt3hKt3hKt3RNC4hKtLySt3hKlsBTYQTZCQjKzYTZOM0UFUWNt3hKtjyPt3hKy7jKt3hYq3hKt3RNCEiVwQETrIlZqrhU2fUT0LjKt3hKP4hKtX1Jt3hKtjyPt3hKy7jQgwzMtDzUA01L1jFQOc2St3hKt3hKt3hK4LjKt3hKt3hKt3hK5c0JoUDQBkmZ58TL4T1Rq3hKt3hKt3hKtLySt3hKt3hKt3hKtXVL4gSTP4hKt3hKt3hKtbyPt3hKt3hKt3hYq3hKt3RNC4hKtLyS2nmZn4RPt3hKtvjKt3hcO4hKt.kKA4hKtjyPt3hKt.kKt3hYq3hKt3hKt3hKt3hKx.iaVEzYKAGbBIWUuklcO4hKt.kKA4hKtjyPt3hKt.kKt3hYq3hKt3RNC4hKtLySHY2J13RPgk0PAI2RYczcO4hKt3hKt3hKtjyPt3hKt.kKt3hYq3hKt3RNC4hKtLyS3kVTFEzYyTyYtHWQynDcO4hKt.kKA4hKtjyPt3hKt.kKt3hYq3hKt3hKt3hKt3hKZ8jLGETPt3hKt3hKt3hcO4hKt3hKt3hKtjyPt3hKt.kKt3hYq3hKt3hKt3hKt3hKZ8jLGETPt3hKt3hKt3hcO4hKt3hKt3hKtjyPt3hKt.kKt3hYq3hKt3xMC4hKtX2St3hKtrhKt3hK2LjKt3hcO4hKt3xJt3hKtbyPt3hK18jKt3hKq3hKt3hKPkGS4o2SMkGSSshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLySt3hKt3BVpEkcIckKt3hKt3hKt3hKtvyKIMzasA2atUlaz4COIUDYoQ2Pu4Fcx8FarUlb9fSLtXTRqwjcM4hKt3BTG4hKt3xP3vVXoUEahoWPBI0Y2YTXlQDUgkWTWkEdQYEVyEjTSUWTVkEdzDyJqrxJqDjKt3hKt3hKt3BTt3hKt3xPUICUVUjKt3hKt3hKt3hKFkEUYoVPt3hKt3hKt3xLOwyKIUDYoQ2Pu4Fcx8FarUlb9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+                                                    },
+                                                    "fileref": {
+                                                        "name": "Pro-R 2[1]",
+                                                        "filename": "Pro-R 2[1].maxsnap",
+                                                        "filepath": "~/Documents/Max 9/Snapshots",
+                                                        "filepos": -1,
+                                                        "snapshotfileid": "dc2767281e97a963825053d7cf53f669"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "text": "vst~ \"C74_VST3:/FabFilter Pro-R 2\"",
+                                    "varname": "vst~",
+                                    "viewvisibility": 1
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-25",
@@ -18470,7 +18624,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 22.0, 465.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 153.0, 551.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -18633,7 +18787,15 @@
                         "lines": [
                             {
                                 "patchline": {
+                                    "destination": [ "obj-18", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-21", 0 ],
+                                    "order": 1,
                                     "source": [ "obj-1", 0 ]
                                 }
                             },
@@ -18689,7 +18851,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-23", 0 ],
-                                    "source": [ "obj-21", 0 ]
+                                    "source": [ "obj-18", 0 ]
                                 }
                             },
                             {
@@ -18759,6 +18921,18 @@
                                 "patchline": {
                                     "destination": [ "obj-24", 0 ],
                                     "source": [ "obj-25", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-18", 0 ],
+                                    "source": [ "obj-52", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-18", 0 ],
+                                    "source": [ "obj-53", 0 ]
                                 }
                             },
                             {
@@ -19594,7 +19768,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 134.0, 164.0, 1169.0, 610.0 ],
+                        "rect": [ 134.0, 164.0, 1474.0, 730.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
                             {
@@ -21485,7 +21659,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 54.0, 368.0, 1424.0, 832.0 ],
+                        "rect": [ 54.0, 206.0, 1424.0, 832.0 ],
                         "subpatcher_template": "Default Max 7",
                         "boxes": [
                             {
@@ -23592,6 +23766,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-112", 1 ],
+                    "order": 2,
+                    "source": [ "obj-215", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-112", 0 ],
+                    "order": 3,
+                    "source": [ "obj-215", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-220", 0 ],
                     "source": [ "obj-216", 0 ]
                 }
@@ -23648,6 +23836,13 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-349", 0 ],
+                    "order": 2,
+                    "source": [ "obj-218", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-229", 0 ],
                     "source": [ "obj-219", 0 ]
                 }
@@ -23675,6 +23870,13 @@
                 "patchline": {
                     "destination": [ "obj-112", 8 ],
                     "order": 1,
+                    "source": [ "obj-221", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-349", 0 ],
+                    "order": 2,
                     "source": [ "obj-221", 0 ]
                 }
             },
@@ -24303,6 +24505,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-112", 1 ],
+                    "order": 0,
+                    "source": [ "obj-349", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-112", 0 ],
+                    "order": 1,
+                    "source": [ "obj-349", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-89", 0 ],
                     "source": [ "obj-35", 0 ]
                 }
@@ -24645,6 +24861,7 @@
             "obj-243": [ "button[1]", "button[1]", 0 ],
             "obj-248": [ "number[13]", "number[13]", 0 ],
             "obj-25": [ "PostPublison1Fader", "PostPublison1Fader", 0 ],
+            "obj-35::obj-18": [ "vst~", "vst~", 0 ],
             "obj-42": [ "number", "number", 0 ],
             "obj-48::obj-3": [ "Halaphon1_4ChsOut", "Halaphon1_4ChsOut", 0 ],
             "obj-48::obj-7::obj-10": [ "PhasorVertOffset[2]", "PhasorVertOffset", 0 ],

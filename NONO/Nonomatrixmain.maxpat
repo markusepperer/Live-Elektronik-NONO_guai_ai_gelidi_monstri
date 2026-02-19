@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 205.0, 124.0, 1615.0, 913.0 ],
+        "rect": [ -12.0, 97.0, 1615.0, 913.0 ],
         "subpatcher_template": "Default Max 7",
         "boxes": [
             {
@@ -171,7 +171,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1116.3281850218773, 855.545446395874, 140.74073839187622, 22.0 ],
-                    "presentation_linecount": 6,
                     "text": "receive del2_Vlm"
                 }
             },
@@ -183,7 +182,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1007.4073905944824, 886.363627910614, 113.73738098144531, 22.0 ],
-                    "presentation_linecount": 5,
                     "text": "receive del1_Vlm"
                 }
             },
@@ -203,9 +201,8 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 152.0, 354.0, 1198.0, 839.0 ],
+                        "rect": [ 152.0, 199.0, 1198.0, 839.0 ],
                         "subpatcher_template": "Default Max 7",
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -698,7 +695,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 543.0000157356262, 391.0000056028366, 448.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "The rightmost outlet of the midiparse object converts MIDI input into properly formatted midievent messages for use with the vst~ object."
                                 }
@@ -726,7 +722,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 981.6666954755783, 344.3333375453949, 57.5, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "MIDI \nChannel"
                                 }
@@ -741,7 +736,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 887.0000259876251, 344.3333375453949, 41.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Pitch\nBend"
                                 }
@@ -769,7 +763,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 699.0000203847885, 344.3333375453949, 60.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Pgm \nChange"
                                 }
@@ -784,7 +777,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 605.6666842699051, 344.3333375453949, 61.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Control \nChange"
                                 }
@@ -799,7 +791,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 511.0000147819519, 344.3333375453949, 62.166672, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Poly \nPressure"
                                 }
@@ -814,7 +805,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 415.00001192092896, 344.3333375453949, 53.0, 36.0 ],
-                                    "presentation_linecount": 2,
                                     "style": "helpfile_label",
                                     "text": "Note \nOn/Off"
                                 }
@@ -1272,7 +1262,7 @@
                                 "box": {
                                     "allowdrag": 0,
                                     "id": "obj-74",
-                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "from Max 1", ",", "from Max 2", ",", "MPD218 Port A", ",", "Fireface UFX III (24243627) Port 1", ",", "Fireface UFX III (24243627) Port 2", ",", "Fireface UFX III (24243627) Port 3", ",", "Fireface UFX III (24243627) Port 4", ",", "X-TOUCH COMPACT" ],
+                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "from Max 1", ",", "from Max 2" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -1693,13 +1683,7 @@
                                     "source": [ "obj-96", 0 ]
                                 }
                             }
-                        ],
-                        "bgfillcolor_type": "gradient",
-                        "bgfillcolor_color1": [ 0.376471, 0.384314, 0.4, 1.0 ],
-                        "bgfillcolor_color2": [ 0.290196, 0.309804, 0.301961, 1.0 ],
-                        "bgfillcolor_color": [ 0.290196, 0.309804, 0.301961, 1.0 ],
-                        "bgfillcolor_angle": 270.0,
-                        "bgfillcolor_proportion": 0.39
+                        ]
                     },
                     "patching_rect": [ 939.0244126319885, 131.70732021331787, 59.0, 22.0 ],
                     "text": "p XTouch"
@@ -2741,7 +2725,7 @@
                                 "box": {
                                     "allowdrag": 0,
                                     "id": "obj-74",
-                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "from Max 1", ",", "from Max 2", ",", "MPD218 Port A" ],
+                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "from Max 1", ",", "from Max 2" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -6290,7 +6274,7 @@
                                 "box": {
                                     "allowdrag": 0,
                                     "id": "obj-74",
-                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "from Max 1", ",", "from Max 2", ",", "MPD218 Port A" ],
+                                    "items": [ "AU DLS Synth 1", ",", "IAC-Treiber Max 3", ",", "IAC-Treiber Max 4", ",", "IAC-Treiber Max 5", ",", "IAC-Treiber Max 6", ",", "IAC-Treiber Bus 5", ",", "IAC-Treiber von live raus", ",", "from Max 1", ",", "from Max 2" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -6995,7 +6979,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 2105.4544701576233, 278.1818082332611, 50.0, 22.0 ],
-                    "text": "butter",
+                    "text": "biquad",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
             },
@@ -10813,7 +10797,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 281.0, 267.0, 50.0, 22.0 ],
-                                    "text": "butter",
+                                    "text": "biquad",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
                             },
@@ -23613,14 +23597,16 @@
             "obj-48::obj-7::obj-15": [ "PingPongHorizOffset[2]", "PingPongHorizOffset", 0 ],
             "obj-48::obj-7::obj-16": [ "PingPongVertiFreq[2]", "PingPongVertiFreq", 0 ],
             "obj-48::obj-7::obj-17": [ "PingpongVertOffset[2]", "PingpongVertOffset", 0 ],
+            "obj-48::obj-7::obj-24": [ "Nodesize[3]", "NodesizeDelay1", 0 ],
             "obj-48::obj-7::obj-31": [ "HorizontalPingPongOffsetCycle[2]", "HorizontalPingPongOffsetCycle", 0 ],
             "obj-48::obj-7::obj-37": [ "Fixedpanner1[1]", "Fixedpanner1", 0 ],
             "obj-48::obj-7::obj-38": [ "Fixedpanner2[1]", "Fixedpanner2", 0 ],
+            "obj-48::obj-7::obj-39": [ "Nodesize[7]", "NodesizeDelay1", 0 ],
+            "obj-48::obj-7::obj-41": [ "Nodesize[6]", "NodesizeDelay1", 0 ],
             "obj-48::obj-7::obj-419": [ "CycleCircleFreq[2]", "CycleCircleFreq", 0 ],
             "obj-48::obj-7::obj-420": [ "CycleCircleOffset[2]", "CycleCircleOffset", 0 ],
             "obj-48::obj-7::obj-470": [ "umenu[2]", "umenu", 0 ],
             "obj-48::obj-7::obj-495": [ "randompanningmatrix[2]", "randompanningmatrix", 0 ],
-            "obj-48::obj-7::obj-497": [ "Randompanningspeed[2]", "Randompanningspeed", 0 ],
             "obj-48::obj-7::obj-677": [ "tab[1]", "circlepanningmodes", 0 ],
             "obj-48::obj-7::obj-7": [ "PhasorHorizFreq[2]", "PhasorHorizFreq", 0 ],
             "obj-48::obj-7::obj-728": [ "Nodesize[2]", "NodesizeDelay1", 0 ],
@@ -23635,14 +23621,16 @@
             "obj-49::obj-7::obj-15": [ "PingPongHorizOffset[1]", "PingPongHorizOffset", 0 ],
             "obj-49::obj-7::obj-16": [ "PingPongVertiFreq[1]", "PingPongVertiFreq", 0 ],
             "obj-49::obj-7::obj-17": [ "PingpongVertOffset[1]", "PingpongVertOffset", 0 ],
+            "obj-49::obj-7::obj-24": [ "Nodesize[5]", "NodesizeDelay1", 0 ],
             "obj-49::obj-7::obj-31": [ "HorizontalPingPongOffsetCycle[1]", "HorizontalPingPongOffsetCycle", 0 ],
             "obj-49::obj-7::obj-37": [ "Fixedpanner1", "Fixedpanner1", 0 ],
             "obj-49::obj-7::obj-38": [ "Fixedpanner2", "Fixedpanner2", 0 ],
+            "obj-49::obj-7::obj-39": [ "Nodesize[4]", "NodesizeDelay1", 0 ],
+            "obj-49::obj-7::obj-41": [ "Nodesize[8]", "NodesizeDelay1", 0 ],
             "obj-49::obj-7::obj-419": [ "CycleCircleFreq[1]", "CycleCircleFreq", 0 ],
             "obj-49::obj-7::obj-420": [ "CycleCircleOffset[1]", "CycleCircleOffset", 0 ],
             "obj-49::obj-7::obj-470": [ "umenu[1]", "umenu", 0 ],
             "obj-49::obj-7::obj-495": [ "randompanningmatrix[1]", "randompanningmatrix", 0 ],
-            "obj-49::obj-7::obj-497": [ "Randompanningspeed[1]", "Randompanningspeed", 0 ],
             "obj-49::obj-7::obj-677": [ "tab[9]", "circlepanningmodes", 0 ],
             "obj-49::obj-7::obj-7": [ "PhasorHorizFreq[1]", "PhasorHorizFreq", 0 ],
             "obj-49::obj-7::obj-728": [ "Nodesize[1]", "NodesizeDelay1", 0 ],
@@ -23662,14 +23650,6 @@
             "obj-91": [ "PostHallFader", "PostHall", 0 ],
             "obj-96": [ "PostfilterFader", "Postfilter", 0 ],
             "obj-97": [ "live.gain~[1]", "live.gain~[1]", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
